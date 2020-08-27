@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --exec babel-node --extensions '.ts' src/index.ts",
     "build": "babel ./src --extensions '.ts' --out-dir ./dist",
-    "test": "mocha --require ./babel-polyfill.js test/**/*.spec.ts",
+    "test": "jest --config ./jest.config.json",
     "start": "node ./dist"
   },
   "keywords": [
@@ -51,6 +51,7 @@
     "@types/node": "^12.12.14",
     "@types/request-promise": "^4.1.45",
     "chai": "^4.2.0",
+    "jest": "^26.4.2",
     "mocha": "^8.1.2",
     "nodemon": "^2.0.1",
     "ts-node": "^8.5.4",
